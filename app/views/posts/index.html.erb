@@ -1,3 +1,4 @@
 <% @posts.each do |post| %>
-  <div><%= post.title %></div>
+  <div><%= link_to post.title, post_path(post) %></div>
 <% end %>
+<%# We're using the `link_to` method to automatically create an HTML `a` tag. If you open the browser and inspect the HTML element of the link, you would see the following: %>
